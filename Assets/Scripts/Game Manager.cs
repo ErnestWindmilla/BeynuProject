@@ -6,40 +6,39 @@ public class GameManager : MonoBehaviour
 {
     public event Action OnMainMenu; //Aqui se refiere al evento de estar en el menu principal
     public event Action OnItemsMenu;//Se refirere al evento de estar en el menu de items (platillos)
-    public event Action OnARPosition;
+    public event Action OnARPosition;//
 
-    public static GameManager instance;
+    public static GameManager instance;//
 
 //Al usar el siguiente metodo, se asegura que solo se usa una sola instancia del GameManager
-    private void Awake () {
-        if(instance != null || instance != this )
-        {
-            Destroy(gameObject);
-        } else {
-            instance = this;
-        }
-    }
+    private void Awake () {//
+        if(instance != null || instance != this )//
+        {//
+            Destroy(gameObject);//
+        } else {//
+            instance = this;//
+        }//
+    }//
 
     // Start is called before the first frame update
     void Start()
     {
-        MainMenu();
+        MainMenu();//
     }
 
-    public void MainMenu () {
+    public void MainMenu () {//
         OnMainMenu?.Invoke(); //El simbolo de interrogacion hace referencia que algo esta inscrito al evento
-        Debug.Log("Main Menu Activated");
+        Debug.Log("Main Menu Activated");//
+    }//
 
-    }
+    public void ItemsMenu () {//
+        OnItemsMenu?.Invoke();//
+        Debug.Log("Items Menu Activated");//
+    }//
 
-    public void ItemsMenu () {
-        OnItemsMenu?.Invoke();
-        Debug.Log("Items Menu Activated");
-    }
-
-    public void ARPosition () {
-        OnARPosition?.Invoke();
-        Debug.Log("ARPosition Activated");
-    }
-    //Done by Ernesto Molina October 6 2023
+    public void ARPosition () {//
+        OnARPosition?.Invoke();//
+        Debug.Log("ARPosition Activated");//
+    }//
+    //Done 26 rows by Ernesto Molina October 6 2023
 }
