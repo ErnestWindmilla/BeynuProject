@@ -40,5 +40,9 @@ public class GameManager : MonoBehaviour
         OnARPosition?.Invoke();//
         Debug.Log("ARPosition Activated");//
     }//
+
+    public void CloseApp() { //
+        Application.Quit();//
+    }//
     //Done 26 rows by Ernesto Molina October 6 2023
 }
