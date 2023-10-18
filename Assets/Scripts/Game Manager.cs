@@ -44,5 +44,5 @@ public class GameManager : MonoBehaviour
     public void CloseApp() { //
         Application.Quit();//
     }//
-    //Done 26 rows by Ernesto Molina October 6 2023
+    //Done 29 rows by Ernesto Molina October 6 2023
 }
