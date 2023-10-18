@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 
     private void ActivateMainMenu()
     {
-        throw new NotImplementedException();
+        throw new NotImplemetedException();
     } 
     // Update is called once per frame
     void Update()
