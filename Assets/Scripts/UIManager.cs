@@ -6,18 +6,17 @@ using System;
 
 public class UIManager : MonoBehaviour
 {
+    
     [SerializeField] private GameObject mainMenuCanvas;
     [SerializeField] private GameObject itemsMenuCanvas;
     [SerializeField] private GameObject ARPositionCanvas;
-    
-
+   
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.OnMainMenu += ActivateMainMenu;
-        GameManager.instance.OnItemsMenu += ActivateItemsMenu;
-        GameManager.instance.OnARPosition += ActivateARPosition;
-
+       GameManager.instance.OnMainMenu   += ActivateMainMenu;
+       GameManager.instance.OnItemsMenu  += ActivateItemsMenu;
+       GameManager.instance.OnARPosition += ActivateARPosition;
     }
 
     private void ActivateMainMenu()
