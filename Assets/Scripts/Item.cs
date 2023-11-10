@@ -9,4 +9,5 @@ public class Item : ScriptableObject
     public Sprite ItemImage;
     public string ItemDescription;
     public GameObject Item3DModel;
+    
 }
