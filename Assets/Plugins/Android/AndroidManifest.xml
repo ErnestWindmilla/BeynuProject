@@ -12,14 +12,13 @@
             </intent-filter>
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
         </activity>
-                <!-- Agrega tu actividad para manejar el deep link -->
         <activity android:name="com.unity3d.player.DeepLinkActivity"
                   android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="beynu" android:host="app" />
+                <data android:scheme="beynu" android:host="main" />
             </intent-filter>
         </activity>
     </application>
