@@ -16,3 +16,4 @@ MonoBehaviour:
   ItemImage: {fileID: 21300000, guid: 751f547b133a81f41ac8ff2c6c49cb39, type: 3}
   ItemDescription: Ramen Instantaneo
   Item3DModel: {fileID: 1572605368729417972, guid: 094999d3eddf5bb4caa3cad594ac0056, type: 3}
+  ItemMenuDescription: Fideos instantaneos para saciar un apetito especial

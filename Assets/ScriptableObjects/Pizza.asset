@@ -16,3 +16,5 @@ MonoBehaviour:
   ItemImage: {fileID: 21300000, guid: faf4f89ed6a108645b5f847b47755804, type: 3}
   ItemDescription: Pizza Rica
   Item3DModel: {fileID: 1108453781046300532, guid: 19577ffcfe4bb644db29a63c962ec8ae, type: 3}
+  ItemMenuDescription: "Pizza con peperoni, pimientos verdes, queso amarillo y champi\xF1ones
+    en tama\xF1o familiar."

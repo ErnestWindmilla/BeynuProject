@@ -1,13 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-
+using TMPro;
+using System.Dynamic;
 public class ARInteractionsManager : MonoBehaviour
 {
 
     [SerializeField] public Camera aRCamera;
+     [SerializeField] public Textos infoUpdate;
+  
+    [SerializeField] public PasandoInfo pases;
     private ARRaycastManager aRRaycastManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>(); 
     private bool isInitialPosition;
@@ -15,7 +21,10 @@ public class ARInteractionsManager : MonoBehaviour
     private bool isOver3DModel;
     private Vector2 initialTouchPos;
 
+
+    private string itemMenuDescription;
     private GameObject aRPointer;
+    
     private GameObject item3DModel;
     public GameObject Item3DModel
     {
@@ -26,16 +35,28 @@ public class ARInteractionsManager : MonoBehaviour
             isInitialPosition = true;
         }
     } 
+    public string ItemMenuDescription
+    {
+        set{
+            itemMenuDescription=value;
+        }
+        get{
+            return itemMenuDescription;
+        }
+    }
+
 
     void Start()
     {
         aRPointer = transform.GetChild(0).gameObject;
         aRRaycastManager = FindObjectOfType<ARRaycastManager>(); 
         GameManager.instance.OnMainMenu += setItemPosition;
+
     }
 
     void Update()
     {
+                 
         if(isInitialPosition)
         {
             Vector2 middlePointScreen = new Vector2(Screen.width/2, Screen.height/2);

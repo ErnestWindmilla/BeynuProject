@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu]
 public class Item : ScriptableObject
@@ -8,4 +9,5 @@ public class Item : ScriptableObject
     public string ItemDescription;
     
     public GameObject Item3DModel;
+    public string ItemMenuDescription;
 }

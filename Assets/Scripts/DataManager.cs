@@ -23,6 +23,7 @@ public class DataManager : MonoBehaviour
             itemButton.ItemImage = item.ItemImage;
             itemButton.Item3DModel = item.Item3DModel;
             itemButton.name = item.ItemName;
+            itemButton.ItemMenuDescription = item.ItemMenuDescription;//
         }
         GameManager.instance.OnItemsMenu -= CreateButtons;
     }

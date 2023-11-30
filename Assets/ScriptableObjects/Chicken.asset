@@ -16,3 +16,4 @@ MonoBehaviour:
   ItemImage: {fileID: 21300000, guid: 9aa38941f909b7a4ea065b021bb5f9fb, type: 3}
   ItemDescription: Rostizado
   Item3DModel: {fileID: 8161385005580455105, guid: b339c59223d10054cb04b6f1cf811323, type: 3}
+  ItemMenuDescription: Pollo Rostizado, cocinado lentamente por cocineros expertos

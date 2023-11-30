@@ -16,3 +16,4 @@ MonoBehaviour:
   ItemImage: {fileID: 21300000, guid: 2022b874e2dc90f41b862ac22595c19b, type: 3}
   ItemDescription: Sandwich
   Item3DModel: {fileID: 1183364188683366976, guid: 083e5a1f4f321a74b93b0c4bbf78f196, type: 3}
+  ItemMenuDescription: "Sandwich sencillo de jam\xF3n con queso y pan integral"
